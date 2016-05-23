@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<plugin id="cordova-plugin-baidu-geolocation" version="0.2.3">
+<plugin id="cordova-plugin-baidu-geolocation-c" version="0.2.3">
 
   <name>BaiduGeolocation</name>
-
-  <preference name="API_KEY" />
 
   <platform name="android">
 
@@ -59,7 +57,7 @@
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
       <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"></service>
-      <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="$API_KEY"/>
+      <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="your baidu ak"/>
     </config-file>
 
      <dependency id="cordova-plugin-compat" version="^1.0.0" />
